@@ -1,8 +1,23 @@
 using UnityEngine;
+using System.Collections.Generic;
+using System.Collections;
 
-public class PlayerController : MonoBehaviour
+// ParentController is the parent class for PlayerController, which the PlayerController is inheriting from.
+// The ParentController in turn is inheriting from MonoBehaviour, which is the base class every Unity script derives from.
+public class PlayerController : ParentController
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    // Reference to the PlayerPawn component
+    //public PlayerPawn playerPawn; //Better to have in ParentController.cs?
+
+    // Movement Keys
+    public KeyCode moveForwardKey; // Key to move the player forward
+    public KeyCode moveBackwardKey; // Key to move the player backward
+    public KeyCode moveLeftKey; // Key to move the player left
+    public KeyCode moveRightKey; // Key to move the player right
+
+    //public KeyCode fireKey; //Tank Fire Key
+
     void Start()
     {
         

@@ -1,8 +1,12 @@
 using UnityEngine;
+using System.Collections.Generic;
+using System.Collections;
 
-public class PlayerPawn : MonoBehaviour
+// ParentPawn is the parent class for PlayerPawn, which the PlayerPawn is inheriting from.
+// The ParentPawn in turn is inheriting from MonoBehaviour, which is the base class every Unity script derives from.
+public class PlayerPawn : ParentPawn
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         
