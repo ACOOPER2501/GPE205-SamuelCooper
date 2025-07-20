@@ -1,16 +1,8 @@
 using UnityEngine;
 
-public class ParentShooter : MonoBehaviour
+public abstract class ParentShooter : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public abstract void Shoot(); // Abstract method to be implemented by derived classes for shooting logic
+
 }
